@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PiUserCircle } from "react-icons/pi";
+import { LiaStoreSolid } from 'react-icons/lia';
 
 const Headers = () => {
   let [isOpen,setIsOpen]=useState(false)
@@ -63,9 +64,9 @@ const Headers = () => {
     </div>
 
             <div className='text-lg' title='Become a Seller'>
-              <Link>Become a Seller</Link>
+              <LiaStoreSolid/>
+              <Link to='././Private/Seller/SellerDashboard'>Become a Seller</Link>
             </div> 
-  
     
         </div>
     </div>
@@ -75,12 +76,13 @@ const Headers = () => {
 
 export default Headers
 
-
-{/* <div>
+/*{
+ <div>
 
 </div>
 <div className='flex item-center justify-around'>
 <Link to={"/"}>Logo</Link>
  <Link to={"/login"}>Login</Link>
 <Link to={"/register"}>Register</Link>
-</div> */}
+</div> 
+}*/
